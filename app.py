@@ -49,4 +49,4 @@ def predict_image():
         return render_template("index.html", ml_result="The prediction is {}".format(labels[1]))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
