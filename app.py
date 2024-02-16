@@ -13,6 +13,10 @@ labels = ["Accident", "Normal"]
 def home():
     return render_template("index.html")
 
+@app.route("/health")
+def health():
+    return "Healthy"
+
 @app.route('/predict', methods=['POST'])
 def predict_image():
     # Check if the POST request contains a file
